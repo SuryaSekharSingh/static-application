@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FoodieExpress</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: #ff4d4d;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px;
+      background: #fff5f5;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text button {
+      padding: 12px 25px;
+      border: none;
+      background: #ff4d4d;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hero img {
+      width: 400px;
+    }
+
+    .section {
+      padding: 60px;
+      text-align: center;
+    }
+
+    .section h2 {
+      margin-bottom: 40px;
+      font-size: 32px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 250px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      background: white;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+    }
+
+    .footer {
+      background: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text {
+        max-width: 100%;
+      }
+
+      .hero img {
+        width: 300px;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>FoodieExpress</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Delicious Food Delivered To You</h2>
+      <p>Order from your favorite restaurants anytime, anywhere.</p>
+      <button onclick="orderNow()">Order Now</button>
+    </div>
+    <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Food">
+  </section>
+
+  <!-- Popular Dishes -->
+  <section class="section">
+    <h2>Popular Dishes</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?pizza">
+        <h3>Pizza</h3>
+        <p>Hot & cheesy pizzas delivered fast.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?burger">
+        <h3>Burger</h3>
+        <p>Juicy burgers with crispy fries.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?biryani">
+        <h3>Biryani</h3>
+        <p>Authentic taste, rich flavors.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section" style="background:#fff5f5;">
+    <h2>Why Choose Us?</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Fast Delivery</h3>
+        <p>Get your food delivered in under 30 minutes.</p>
+      </div>
+
+      <div class="card">
+        <h3>Best Quality</h3>
+        <p>We partner with top restaurants only.</p>
+      </div>
+
+      <div class="card">
+        <h3>Easy Payment</h3>
+        <p>Multiple secure payment options.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>© 2026 FoodieExpress | All Rights Reserved</p>
+  </div>
+
+  <script>
+    function orderNow() {
+      alert("Redirecting to menu...");
+    }
+  </script>
+
+</body>
+</html>
